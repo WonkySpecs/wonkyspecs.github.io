@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Hypergeometric Calculator</title>
+        <script src="script.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="inputs-container">
+            <label for="deck-size-input">Deck size:</label>
+            <label for="hits-in-deck-input">Hits in deck:</label>
+            <label for="cards-seen-input">Cards seen:</label>
+            <label for="desired-hits-input">Desired hits:</label>
+
+            <input type="number" id="deck-size-input" value="60"/>
+            <input type="number" id="hits-in-deck-input"/>
+            <input type="number" id="cards-seen-input" value="7"/>
+            <input type="number" id="desired-hits-input" value="1"/>
+
+            <div id="button-inputs">
+                <button id="40-button">40</button>
+                <button id="60-button">60</button>
+                <button id="100-button">100</button>
+            </div>
+
+        </div>
+
+        <div id="output-container">
+            <div id="exact-output-label">Exact:</div>
+            <div id="greater-equal-output-label">Greater equal:</div>
+            <div id="greater-output-label">Greater:</div>
+            <div id="lesser-output-label">Less:</div>
+
+            <span id="exact-output-value">-</span>
+            <span id="greater-equal-output-value">-</span>
+            <span id="greater-output-value">-</span>
+            <span id="lesser-output-value">-</span>
+        </div>
+    </body>
+</html>

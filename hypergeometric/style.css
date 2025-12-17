@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+
+#inputs-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 7em 4em 8em;
+    column-gap: 0.2em;
+    row-gap: 0.1em;
+    max-width: 20em;
+    grid-auto-flow: column;
+}
+
+#inputs-container label {
+    grid-column: 1;
+    justify-self: end;
+}
+
+#inputs-container button {
+    grid-column: 2;
+}
+
+#button-inputs {
+    grid-column: 3;
+}
+
+#output-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 7em 4em;
+    column-gap: 0.6em;
+    row-gap: 0.1em;
+    max-width: 20em;
+    grid-auto-flow: column;
+}
+
+#output-container div {
+    justify-self: end;
+}
